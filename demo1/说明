@@ -1,0 +1,5 @@
+demo1: 跑通一个servlet
+
+技术点：
+1、实现Servlet接口，实现n个方法
+2、在web.xml中配置servlet映射

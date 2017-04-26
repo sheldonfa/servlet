@@ -1,0 +1,4 @@
+demo1       跑通一个servlet
+demo2       服务启动就创建servlet实例配置
+demo3       继承GenericServlet和HttpServlet的方式完成一个Servlet
+demo4       ServletConfig和ServletContext的作用

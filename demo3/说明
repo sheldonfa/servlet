@@ -1,0 +1,6 @@
+demo3       继承GenericServlet和HttpServlet的方式完成一个Servlet
+
+技术点：
+1、GenericServlet可以直接获取getServletContext，但本质也是通过getServletConfig
+
+2、HttpServlet的doGet和doPost本质就是service方法的细分。if("GET")就doGet，if("POST")就doPost，还有head，delete，option等等

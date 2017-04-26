@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <!--全局配置信息-->
+    <context-param>
+        <param-name>encoding</param-name>
+        <param-value>UTF-8</param-value>
+    </context-param>
+
+    <!--用来比较config和context的getInitParameter区别-->
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>com.ConfigDemo</servlet-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>haha</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+
+    <!--感受context作为域的作用-->
+    <servlet>
+        <servlet-name>servlet2</servlet-name>
+        <servlet-class>com.ContextDemo</servlet-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>haha2</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>servlet3</servlet-name>
+        <servlet-class>com.ContextDemo2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet3</servlet-name>
+        <url-pattern>/servlet3</url-pattern>
+    </servlet-mapping>
+</web-app>

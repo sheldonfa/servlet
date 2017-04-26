@@ -1,0 +1,13 @@
+demo2       服务启动就创建servlet实例
+
+技术点：
+1、配置servlet的load-on-startup为2
+
+心得：
+
+1、以前一直以为servlet是单例的意思是：一共就一个servlet，实际上错了
+    如果你写两个类实现Servlet，分别访问，可以创建两个Servlet实例
+    单例的意思是：多次访问，只有一个实例
+
+
+

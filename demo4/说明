@@ -1,0 +1,8 @@
+demo4       ServletConfig和ServletContext的作用
+
+技术点：
+1、web.xml中配置某个servlet的init-param是为某个特定的servlet配置初始化参数，这个参数在代码中可以用ServletConfig获取
+2、web.xml中的<context-param>是全局参数，是所有servlet共享的，可以用ServletContext获取
+3、ServletContext作为域对象，放入它的属性，其他servlet可以获取到，是最大的域
+4、ServletContext的getRealPath可以根据资源名称获取绝对路径
+5、ServletContext可以请求转发，但是不常用了

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!--继承genericServlet的自定义servlet-->
+    <servlet>
+        <servlet-name>genericServletDemo</servlet-name>
+        <servlet-class>com.GenericServletDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>genericServletDemo</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+
+    <!--继承httpServlet的自定义servlet-->
+    <servlet>
+        <servlet-name>httpServletDemo</servlet-name>
+        <servlet-class>com.HttpServletDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>httpServletDemo</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+</web-app>
